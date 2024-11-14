@@ -1,0 +1,121 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center fixed;
+    background-size: cover; /* Hình nền full màn hình */
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(13, 186, 188, 0.995); /* Nền mờ với màu xanh dương */
+    color: white;
+    padding: 100px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.header-container h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-out;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+/* Tạo hiệu ứng fadeIn cho h1 */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Links container */
+main {
+    padding: 50px 20px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center; /* Căn giữa các ô */
+    align-items: center;
+    gap: 40px; /* Khoảng cách giữa các liên kết */
+}
+
+.link-item a {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgba(13, 186, 188, 0.995);
+    background-color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    border: 2px solid rgba(13, 186, 188, 0.995)F;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(13, 186, 188, 0.995); /* Đổ bóng cho các ô */
+    transition: all 0.3s ease-in-out; /* Hiệu ứng hover */
+}
+
+.link-item a:hover {
+    background-color: rgba(13, 186, 188, 0.995);
+    color: white;
+    border-color: rgba(13, 186, 188, 0.995);
+    transform: scale(1.1); /* Phóng to khi hover */
+    box-shadow: 0 8px 20px rgba(13, 186, 188, 0.995); /* Tăng đổ bóng khi hover */
+}
+
+
+/* Media Queries - Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    .link-item a {
+        font-size: 1.1rem;
+        padding: 15px 30px;
+    }
+}
+
+/* Hiệu ứng khi cuộn trang */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.links-container {
+    animation: slideIn 1.5s ease-out;
+}
