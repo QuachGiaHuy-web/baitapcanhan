@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body{
+    background: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.container .left{
+    position: relative;
+    background:#167266;
+    padding:10px;
+}
+.container .right{
+    position: relative;
+    background:#fff;
+    padding:70px;
+}
+.profileText{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgb(255,255,255,0.2);
+}
+.profileText .profileImg{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+.profileText .profileImg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.Infor{
+    padding:30px;
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600; 
+    letter-spacing: 0.4px;
+    margin-bottom: 20px;
+}
+.Infor ul{
+    position:relative;
+}
+.Infor ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.Infor ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: #0af6d7;
+}
+.Infor ul li span{
+    color:#fff;
+    font-weight: 200;
+}
+.Infor.language{
+    padding:50px ;
+}
+.Infor.education{
+    padding: 50px;
+}
+.Infor.education li{
+    margin-bottom: 15px;
+}
+.Infor.education h4{
+    color: #fff;
+    font-weight: 500;
+}
+.Infor.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #cfcfcf;
+    display: block;
+    margin-top: 5px;
+}
+.Infor.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #06f6d7;
+}
+.container .right{
+    position: relative;
+    background:#fff;
+    padding:70px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0px;
+}
+.title2{
+    color:#167266;
+    text-transform: uppercase ;
+    margin-bottom: 10px;
+}
+p{
+    color: #333;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company{
+    min-width: 150px;
+}
+.about .box .year_company{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight:600;
+}
